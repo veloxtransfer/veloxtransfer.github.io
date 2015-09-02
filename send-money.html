@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:300,400,400italic,700' rel='stylesheet' type='text/css'>
+    <link media="all" rel="stylesheet" href="assets/css/main.css" type="text/css" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/how-it-works.html">How it works?</a></li>
+            <li><a href="/my-payments.html">Transfers</a></li>
+            <li><a href="/my-recipients.html">Recipients</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="glyphicon glyphicon-user"></i>
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="/my-profile.html">My Account</a></li>
+                <li><a href="/index.html">Logout</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <img src="assets/img/flags/usa.png" alt="" />
+                  <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/flags/usa.png" alt="" /> EN
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/flags/br.png" alt="" /> PT-BR
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <img src="assets/img/flags/ven.png" alt="" /> VEN
+                      </a>
+                  </li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+
+
+    <!-- .main -->
+    <div class="main">
+        <!-- .container -->
+        <div class="container">
+            <!-- .row -->
+            <div class="row">
+                <!-- .col -->
+                <div class="col-md-12">
+                    <div class="head-border">
+                        <div></div>
+                    </div>
+                    <h1>HOW MUCH WOULD YOU LIKE TO TRANSFER?</h1>
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-md-5">
+                    <!-- .well -->
+                    <div class="well well--remittance">
+                        <!-- .form-group -->
+                        <div class="form-group form-group--remittance">
+                            <label for="">You send:</label>
+
+                            <div class="input-group">
+                                  <input type="text" class="form-control form-control--noBorder" id="" placeholder="0.00" value="1.000">
+                                  <div class="input-group-addon">
+                                      <select id="" name="">
+                                          <option value="">USD</option>
+                                          <option value="">BRL</option>
+                                      </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <!-- .form-group -->
+                        <div class="form-group form-group--remittance">
+                            <label for="">Receive:</label>
+
+                            <div class="input-group">
+                                  <input type="text" class="form-control form-control--noBorder" id="" placeholder="0.00" value="3.370">
+                                  <div class="input-group-addon">
+                                      <select id="" name="">
+                                          <option value="">BRL</option>
+                                          <option value="">USD</option>
+                                      </select>
+                                  </div>
+                            </div>
+                        </div>
+                        <!-- /.form-group -->
+
+                        <p><em>VeloxTransfer</em> charges a fee of <strong>$10.00</strong> and you get a estimated exchange rate of <strong>$1 > R$3.37</strong></p>
+
+                        <button class="btn btn-success btn-block">TRANSFER NOW</button>
+                    </div>
+                    <!-- /.well -->
+
+                    <p class="lead">
+                        You'll save <strong>$28.87</strong> vs your bank.
+                        <br />
+                        Estimated arrival by <strong>Tuesday, August 25</strong>
+                    </p>
+
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-md-7">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#bank-transfer" aria-controls="bank-transfer" role="tab" data-toggle="tab">
+                                Bank transfer
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#credit-card" aria-controls="credit-card" role="tab" data-toggle="tab">
+                                Credit card
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#deposit" aria-controls="deposit" role="tab" data-toggle="tab">
+                                Deposit
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="bank-transfer">
+                            <form action="">
+                                <legend>Your details</legend>
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Full Name:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Email:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Account type:</label>
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Checking
+                                                </label>
+
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Savings
+                                                </label>
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Bank name:</label>
+                                            <select id="" name="" class="form-control">
+                                                <option value="">Banco Itaú S. A.</option>
+                                            </select>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Branch Code:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Tax Registration Number (CPF):</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <br />
+
+                                <legend>Recipient details or <span class="text-success">Recipient specify the details</span></legend>
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Full Name:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Email:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Account type:</label>
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Checking
+                                                </label>
+
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Savings
+                                                </label>
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Bank name:</label>
+                                            <select id="" name="" class="form-control">
+                                                <option value="">Banco Itaú S. A.</option>
+                                            </select>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Branch Code:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Tax Registration Number (CPF):</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <button class="btn btn-success btn-block">COMPLETE TRANSFER</button>
+
+                                <br />
+
+                                <button class="btn btn-default btn-block">Cancel</button>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="credit-card">
+                            <form action="">
+                                <legend>
+                                    Your details
+                                    <img src="assets/img/cards.png" alt="">
+                                </legend>
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Card number:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Name as printed:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Expired date:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-xs-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">CVC/CVV:</label>
+                                            <!-- .row -->
+                                            <div class="row">
+                                                <!-- .col -->
+                                                <div class="col-xs-8">
+                                                    <input class="form-control" name="" id="" type="text" placeholder="">
+                                                </div>
+                                                <!-- /.col -->
+
+                                                <!-- .col -->
+                                                <div class="col-xs-4">
+                                                    <img src="assets/img/cvv.png" alt="">
+                                                </div>
+                                                <!-- /.col -->
+                                            </div>
+                                            <!-- /.row -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <br />
+
+                                <legend>Recipient details</legend>
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Full Name:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Email:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Account type:</label>
+                                            <!-- .form-group -->
+                                            <div class="form-group">
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Checking
+                                                </label>
+
+                                                <label class="radio-inline">
+                                                  <input type="radio" id="inlineCheckbox1" value="option1"> Savings
+                                                </label>
+                                            </div>
+                                            <!-- /.form-group -->
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Bank name:</label>
+                                            <select id="" name="" class="form-control">
+                                                <option value="">Banco Itaú S. A.</option>
+                                            </select>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Branch Code:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Tax Registration Number (CPF):</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <button class="btn btn-success btn-block">COMPLETE TRANSFER</button>
+
+                                <br />
+
+                                <button class="btn btn-default btn-block">Cancel</button>
+                            </form>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="deposit">
+                            <form action="">
+                                <legend>Your details</legend>
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Your address:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Zip Code:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">City:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">State/Province:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <br />
+
+                                <legend>Our agencies close to you</legend>
+
+                                <div class="text-center">
+                                    <img class="img-responsive" src="assets/img/map.png" alt="">
+                                </div>
+                                <br>
+
+                                <legend>Upload you deposit receipt</legend>
+
+                                <div class="form-group">
+                                    <input type="file" id="exampleInputFile">
+                                </div>
+
+                                <p class="lead">This is your receipt:</p>
+                                <div class="text-center">
+                                    <img class="img-responsive" src="assets/img/comprovante.png" alt="">
+                                </div>
+                                <br>
+
+                                <button class="btn btn-success btn-block">
+                                    UPLOAD RECEIPT AND COMPLETE TRANSFER
+                                </button>
+
+                                <br />
+
+                                <button class="btn btn-default btn-block">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+<!-- .foot -->
+<footer class="foot">
+    <!-- .container -->
+    <div class="container">
+        <!-- .foot__top -->
+        <div class="foot__top">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">
+                      <img src="assets/img/logo-bot.png" alt="" />
+                  </a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/how-it-works.html">How it works?</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#login">Login</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#signup">Sign Up</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+
+        </div>
+        <!-- /.foot__top -->
+
+        <!-- .foot__bot -->
+        <div class="foot__bot">
+            <!-- .row -->
+            <div class="row">
+                <!-- .col -->
+                <div class="col-xs-6 col-lg-3">
+                    <h5><strong>Company & Team</strong></h5>
+
+                    <ul class="foot-list">
+                        <li>
+                            <a href="">About Us</a>
+                        </li>
+                        <li>
+                            <a href="/privacy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/customer.html">Customer Agreement</a>
+                        </li>
+                        <li>
+                            <a href="">Press</a>
+                        </li>
+                        <li>
+                            <a href="">Careers</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-xs-6 col-lg-3">
+                    <h5><strong>Help & Support</strong></h5>
+
+                    <ul class="foot-list">
+                        <li>
+                            <a href="">Get Started</a>
+                        </li>
+                        <li>
+                            <a href="">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="">Supported Currencies</a>
+                        </li>
+                        <li>
+                            <a href="">Best Price Guarantee</a>
+                        </li>
+                        <li>
+                            <a href="">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="">SWIFT/BIC Codes</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-xs-6 col-lg-3">
+                    <h5><strong>Countries & Currencies</strong></h5>
+
+                    <ul class="foot-list">
+                        <li>
+                            <a href="/how-it-works.html">Transfer money to USA</a>
+                        </li>
+                        <li>
+                            <a href="/how-it-works.html">Transfer money to Brazil</a>
+                        </li>
+                        <li>
+                            <a href="/how-it-works.html">Transfer money to Venezuela</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-xs-6 col-lg-3">
+                    <h5><strong>Contact</strong></h5>
+
+                    <ul class="foot-list">
+                        <li>
+                            support@veloxtransfer.com
+                        </li>
+                        <li>
+                            USA: +1 555 323 6439
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.foot__bot -->
+    </div>
+    <!-- /.container -->
+</footer>
+<!-- /.foot -->
+
+<!-- .modal -->
+<div class="modal fade" id="wishes" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="assets/img/logo-bot.png" alt="">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="head-border">
+            <div></div>
+        </div>
+        <h1>NEW CURRENCIES ARE COMING SOON</h1>
+
+        <p>
+            Want to be first to know?
+            <br>
+            Enter a few details below and you'll receive an email when there's good news.
+        </p>
+
+        <!-- .row -->
+        <div class="row">
+            <!-- .col -->
+            <div class="col-md-6">
+                <!-- .form-group -->
+                <div class="form-group">
+                    <label for="">I want to send money from:</label>
+                    <input class="form-control" name="" id="" type="" placeholder="Currency">
+                </div>
+                <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col-md-6">
+                <!-- .form-group -->
+                <div class="form-group">
+                    <label for="">To:</label>
+                    <input class="form-control" name="" id="" type="" placeholder="Currency">
+                </div>
+                <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col-md-6">
+                <!-- .form-group -->
+                <div class="form-group">
+                    <label for="">Your name:</label>
+                    <input class="form-control" name="" id="" type="" placeholder="">
+                </div>
+                <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+
+            <!-- .col -->
+            <div class="col-md-6">
+                <!-- .form-group -->
+                <div class="form-group">
+                    <label for="">Your email:</label>
+                    <input class="form-control" name="" id="" type="" placeholder="">
+                </div>
+                <!-- /.form-group -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <button class="btn btn-success btn-block">LET ME KNOW</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+
+<!-- .modal -->
+<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="assets/img/logo-bot.png" alt="">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="head-border">
+            <div></div>
+        </div>
+        <h1>CREATE YOU ACCOUNT</h1>
+
+        <!-- .form-group -->
+        <div class="form-group">
+            <input class="form-control" name="" id="" type="email" placeholder="Your email">
+        </div>
+        <!-- /.form-group -->
+
+        <!-- .form-group -->
+        <div class="form-group">
+            <input class="form-control" name="" id="" type="password" placeholder="Create a password">
+        </div>
+        <!-- /.form-group -->
+
+        <!-- .form-group -->
+        <div class="form-group">
+            <input class="form-control" name="" id="" type="password" placeholder="Re-enter password">
+        </div>
+        <!-- /.form-group -->
+
+        <a href="/my-payments.html" class="btn btn-success btn-block">SIGN IN</a>
+      </div>
+      <div class="modal-footer">
+          <i class="glyphicon glyphicon-lock"></i> 100% secure & fully FCA regulated
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+
+<!-- .modal -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img src="assets/img/logo-bot.png" alt="">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <div class="head-border">
+            <div></div>
+        </div>
+        <h1>USE YOUR ACCOUNT</h1>
+
+        <!-- .form-group -->
+        <div class="form-group">
+            <input class="form-control" name="" id="" type="email" placeholder="Your email">
+        </div>
+        <!-- /.form-group -->
+
+        <!-- .form-group -->
+        <div class="form-group">
+            <input class="form-control" name="" id="" type="password" placeholder="Your password">
+        </div>
+        <!-- /.form-group -->
+
+        <a href="/my-payments.html" class="btn btn-success btn-block">ENTER</a>
+
+        <br />
+
+        <div class="head-border">
+            <div></div>
+        </div>
+        <h1>OR</h1>
+
+        <a href="/my-payments.html" class="btn btn-facebook btn-block">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generated by IcoMoon.io -->
+            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" fill="#fff" height="16" viewBox="0 0 512 512"><g id="icomoon-ignore">
+            </g>
+            <path d="M336 80c-44.183 0-80 35.817-80 80v48h-64v64h64v224h64v-224h72l16-64h-88v-48c0-8.836 7.163-16 16-16h80v-64h-80z"></path>
+            </svg>
+            CONNECT WITH YOUR FACEBOOK
+        </a>
+      </div>
+      <div class="modal-footer">
+          <i class="glyphicon glyphicon-lock"></i> 100% secure & fully FCA regulated
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+
+<script src="assets/js/jquery/dist/jquery.js"></script>
+<script src="assets/js/bootstrap/bootstrap.js"></script>
+</body>
+</html>
+
