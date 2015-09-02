@@ -1,0 +1,132 @@
+<%- partial("_partials/header") %>
+
+    <!-- .main -->
+    <div class="main">
+        <!-- .container -->
+        <div class="container">
+            <!-- .row -->
+            <div class="row">
+                <!-- .col -->
+                <div class="col-md-7">
+                    <!-- .page-head -->
+                    <header class="page-head">
+                        <div class="head-border">
+                            <div></div>
+                        </div>
+                        <h1>NEW RECIPIENT</h1>
+
+                        <a href="/my-recipients.html" class="page-head__back">
+                            <i class="glyphicon glyphicon-menu-left"></i> Back to list
+                        </a>
+                    </header>
+                    <!-- /.page-head -->
+
+                    <hr>
+
+                    <form action="">
+                        <!-- .row -->
+                        <div class="row">
+                            <!-- .col -->
+                            <div class="col-lg-10">
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label for="">Recipient full name or business name:</label>
+                                    <input class="form-control" name="" id="" type="text" placeholder="">
+                                </div>
+                                <!-- /.form-group -->
+
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label class="radio-inline">
+                                      <input type="radio" id="inlineCheckbox1" value="option1"> Private
+                                    </label>
+
+                                    <label class="radio-inline">
+                                      <input type="radio" id="inlineCheckbox1" value="option1"> Business
+                                    </label>
+                                </div>
+                                <!-- /.form-group -->
+
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label for="">Currency:</label>
+                                    <select id="" name="" class="form-control">
+                                        <option value="">USD American Dollar</option>
+                                    </select>
+                                </div>
+                                <!-- /.form-group -->
+
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label for="">IBAN:</label>
+                                    <input class="form-control" name="" id="" type="text" placeholder="">
+                                </div>
+                                <!-- /.form-group -->
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label for="">Address(optional):</label>
+                                    <input class="form-control" name="" id="" type="text" placeholder="">
+                                </div>
+                                <!-- /.form-group -->
+
+                                <!-- .row -->
+                                <div class="row">
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">Postal Code:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+
+                                    <!-- .col -->
+                                    <div class="col-md-6">
+                                        <!-- .form-group -->
+                                        <div class="form-group">
+                                            <label for="">City:</label>
+                                            <input class="form-control" name="" id="" type="text" placeholder="">
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                                <!-- /.row -->
+
+                                <!-- .form-group -->
+                                <div class="form-group">
+                                    <label for="">Country:</label>
+                                    <select id="" name="" class="form-control">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <!-- /.form-group -->
+
+                                <button class="btn btn-success btn-block">ADD NEW RECIPIENT</button>
+
+                                <br />
+
+                                <button class="btn btn-default btn-block">Cancel</button>
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+                    </form>
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-md-5">
+                    <%- partial("_partials/sidebar") %>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+<%- partial("_partials/footer") %>
