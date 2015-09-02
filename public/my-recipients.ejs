@@ -1,0 +1,84 @@
+<%- partial("_partials/header") %>
+
+    <!-- .main -->
+    <div class="main">
+        <!-- .container -->
+        <div class="container">
+            <!-- .row -->
+            <div class="row">
+                <!-- .col -->
+                <div class="col-md-7">
+                    <div class="head-border">
+                        <div></div>
+                    </div>
+                    <h1>MY RECIPIENTS</h1>
+
+                    <!-- .row -->
+                    <div class="row">
+                        <!-- .col -->
+                        <div class="col-md-8">
+                            <input id="" name="" type="text" class="form-control" placeholder="Search by name, bank account" />
+                        </div>
+                        <!-- /.col -->
+
+                        <!-- .col -->
+                        <div class="col-md-4">
+                            <a href="/velox/new-recipient.html" class="btn btn-block btn-success">NEW RECIPIENT</a>
+                        </div>
+                        <!-- /.col -->
+                    </div>
+                    <!-- /.row -->
+
+                    <hr />
+
+                    <p class="lead">This is where you'll find your recipients list.</p>
+                    <p>It seem you are new here. Go ahead and make your first recipient.</p>
+
+                    <!-- .table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Recipient Name</th>
+                                <th colspan="3">Type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Daniel de Paola</td>
+                                <td>Personal</td>
+                                <td>
+                                    <a href="/velox/send-money.html">
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                    </a>
+                                </td>
+                                <td class="text-success">$</td>
+                            </tr>
+                            <tr>
+                                <td>Daniel de Paola</td>
+                                <td>Personal</td>
+                                <td>
+                                    <a href="/velox/send-money.html">
+                                        <i class="glyphicon glyphicon-eye-open"></i>
+                                    </a>
+                                </td>
+                                <td class="text-success">$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /.table -->
+                </div>
+                <!-- /.col -->
+
+                <!-- .col -->
+                <div class="col-md-5">
+                    <%- partial("_partials/sidebar") %>
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.main -->
+
+<%- partial("_partials/footer") %>
